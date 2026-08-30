@@ -1,0 +1,51 @@
+speak("Welcome to Obsidian!")
+speak("---")
+
+# Variables and strings
+forge name = "traveler"
+speak("Hello, " + name)
+
+# Basic arithmetic
+forge a = 6
+forge b = 7
+speak(a * b)
+
+# A simple function
+mold add(x, y) {
+    cool x + y
+}
+speak(add(10, 25))
+
+# Recursion: factorial
+mold fact(n) {
+    crack (n < 2) {
+        cool 1
+    } shatter {
+        cool n * fact(n - 1)
+    }
+}
+speak("5! =")
+speak(fact(5))
+
+# Conditionals
+forge age = 20
+crack (age >= 18) {
+    speak("You are an adult.")
+} shatter {
+    speak("You are a minor.")
+}
+
+# Loops: count from 1 to 5
+speak("Counting up:")
+forge counter = 1
+erupt (counter <= 5) {
+    speak(counter)
+    counter = counter + 1
+}
+
+# Booleans
+speak("Is 10 > 3?")
+speak(10 > 3)
+
+speak("---")
+speak("Demo finished!")
